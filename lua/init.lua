@@ -20,6 +20,7 @@ require "plugins/configs/comment"
 require "plugins/configs/feline"
 require "plugins/configs/fterm"
 require "plugins/configs/barbar"
+require "plugins/configs/tree"
 
 --have bug
 -- require "plugins/configs/neotags"

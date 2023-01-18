@@ -46,6 +46,7 @@ packer.startup(function(use)
   use 'c0r73x/neotags.lua'                 -- neotags
   use 'romgrk/barbar.nvim'                 -- tabline
   use 'ggandor/leap.nvim'                  -- leap motion
+  use 'nvim-tree/nvim-tree.lua'            -- tree edit . 
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
