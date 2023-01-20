@@ -22,6 +22,7 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'              -- Avoids callbacks, used by other plugins
   use 'nvim-lua/popup.nvim'                -- Popup for other plugins
   use 'nvim-treesitter/nvim-treesitter'    -- Language parsing completion engine
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
   use "williamboman/mason.nvim"            -- UI for fetching/downloading LSPs
   use "williamboman/mason-lspconfig.nvim"  -- Bridges mason and lspconfig
   use 'neovim/nvim-lspconfig'              -- Language server protocol implementation
@@ -44,10 +45,13 @@ packer.startup(function(use)
   use 'famiu/feline.nvim'                  -- status line
   use 'numToStr/FTerm.nvim'                -- float terminal     
   use 'c0r73x/neotags.lua'                 -- neotags
-  use 'romgrk/barbar.nvim'                 -- tabline
   use 'ggandor/leap.nvim'                  -- leap motion
-  use 'nvim-tree/nvim-tree.lua'            -- tree edit . 
-
+  use 'nvim-neo-tree/neo-tree.nvim'        -- neo-tree 
+  use 'MunifTanjim/nui.nvim'
+  use 'folke/todo-comments.nvim'
+  use 'catppuccin/nvim'
+  -- use 'nvim-bufferline.lua'  
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if Packer_Bootstrap then

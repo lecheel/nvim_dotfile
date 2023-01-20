@@ -19,8 +19,9 @@ require "plugins/configs/alpha-nvim"
 require "plugins/configs/comment"
 require "plugins/configs/feline"
 require "plugins/configs/fterm"
-require "plugins/configs/barbar"
+-- require "plugins/configs/barbar"
 require "plugins/configs/tree"
+require "plugins/configs/todo"
 
 --have bug
 -- require "plugins/configs/neotags"
