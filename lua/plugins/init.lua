@@ -10,6 +10,14 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+if fn.executable("rg") > 0 then
+  vim.o.grepprg = "rg --hidden --glob '!.git' --no-heading --smart-case --vimgrep --follow $*"
+  vim.opt.grepformat = vim.opt.grepformat ^ { "%f:%l:%c:%m" }
+  vim.cmd [[command! -bar -nargs=1 Grep silent grep <q-args> | redraw!]]
+  vim.cmd [[command! -bar -nargs=0 Ag silent grep <cword> | redraw!|cw]]
+end
+
+
 -- Use a protected call
 local present, packer = pcall(require, "packer")
 
@@ -45,13 +53,19 @@ packer.startup(function(use)
   use 'famiu/feline.nvim'                  -- status line
   use 'numToStr/FTerm.nvim'                -- float terminal     
   use 'c0r73x/neotags.lua'                 -- neotags
-  use 'ggandor/leap.nvim'                  -- leap motion
+  -- use 'ggandor/leap.nvim'                  -- leap motion
+  use 'phaazon/hop.nvim'                   -- hop motion 
   use 'nvim-neo-tree/neo-tree.nvim'        -- neo-tree 
-  use 'MunifTanjim/nui.nvim'
-  use 'folke/todo-comments.nvim'
-  use 'catppuccin/nvim'
-  -- use 'nvim-bufferline.lua'  
-  
+  use 'MunifTanjim/nui.nvim'               -- UI library for neoVim
+  use 'folke/todo-comments.nvim'           -- TODO
+  use 'lukas-reineke/indent-blankline.nvim' -- Indent blankline for TAB 
+  use 'kylechui/nvim-surround'              -- cs'"
+  use 'akinsho/bufferline.nvim'             -- bufferline TAB
+  use 'luukvbaal/nnn.nvim'                  -- NnnExplorer
+  use 'Shatur/neovim-session-manager'       -- SessionManager
+  use 'vimwiki/vimwiki'                     -- vimWiki
+  use 'akinsho/toggleterm.nvim'             -- Toggleterm
+  use 'duane9/nvim-rg'                      -- ripgrep
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if Packer_Bootstrap then

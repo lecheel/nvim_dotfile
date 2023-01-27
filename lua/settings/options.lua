@@ -29,6 +29,7 @@ opt.smartcase = true        -- Ignore lowercase for the whole pattern
 opt.linebreak = true        -- Wrap on word boundary
 opt.termguicolors = true    -- Enable 24-bit RGB colors
 opt.laststatus=3            -- Set global statusline
+opt.wrap = false
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -47,6 +48,7 @@ opt.lazyredraw = true       -- Faster scrolling
 opt.synmaxcol = 240         -- Max column for syntax highlight
 opt.updatetime = 700        -- ms to wait for trigger an event
 
+vim.g.vimwiki_list = {{path = '~/vimwiki/', syntax = 'markdown', ext = '.md'}}
 -----------------------------------------------------------
 -- Startup
 -----------------------------------------------------------

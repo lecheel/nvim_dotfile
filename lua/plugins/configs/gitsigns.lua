@@ -1,13 +1,15 @@
 require('gitsigns').setup {
 
   vim.keymap.set('n', '<F4>', '<CMD>:Gitsigns preview_hunk<CR>'),
-  vim.keymap.set('n', '<return>', '<CMD>:Gitsigns preview_hunk<CR>'),
+  -- vim.keymap.set('n', '<return>', '<CMD>:Gitsigns preview_hunk<CR>'),
   vim.keymap.set('n', '<leader>gr', '<CMD>:GiGitsigns reset_hunk<CR>'),
   vim.keymap.set('n', '<leader>gn', '<CMD>:Gitsigns next_hunk<CR>'),
   vim.keymap.set('n', '<leader>gp', '<CMD>:Gitsigns prev_hunk<CR>'),
   vim.keymap.set('n', '<leader>gd', '<CMD>:Gitsigns diffthis<CR>'),
   vim.keymap.set('n', 'l', '<CMD>:Gitsigns next_hunk<CR>'),
   vim.keymap.set('n', 'L', '<CMD>:Gitsigns prev_hunk<CR>'),
+  vim.keymap.set('n', ']g', '<CMD>:Gitsigns next_hunk<CR>'),
+  vim.keymap.set('n', '[g', '<CMD>:Gitsigns prev_hunk<CR>'),
 
   signs = {
     add          = { hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'    },

@@ -18,15 +18,23 @@ require "plugins/configs/whichkey"
 require "plugins/configs/alpha-nvim"
 require "plugins/configs/comment"
 require "plugins/configs/feline"
-require "plugins/configs/fterm"
+-- require "plugins/configs/fterm"
 -- require "plugins/configs/barbar"
 require "plugins/configs/tree"
 require "plugins/configs/todo"
+require "plugins/configs/blankline"
+require "plugins/configs/bufferline"
+require "plugins/configs/surround"
+require "plugins/configs/nnn"
+require "plugins/configs/session"
+require "plugins/configs/toggleterm"
+require "plugins/configs/hop"
+
 
 --have bug
 -- require "plugins/configs/neotags"
 -- require "plugins/configs/oneterm"
-require('leap').add_default_mappings()
+-- require('leap').add_default_mappings()
 -------------------------------------------
 -- mason --> mason-lspconfig --> lspconfig 
 -- must be setup in this order
