@@ -20,15 +20,15 @@ require "plugins/configs/comment"
 require "plugins/configs/feline"
 -- require "plugins/configs/fterm"
 -- require "plugins/configs/barbar"
-require "plugins/configs/tree"
 require "plugins/configs/todo"
-require "plugins/configs/blankline"
 require "plugins/configs/bufferline"
 require "plugins/configs/surround"
-require "plugins/configs/nnn"
 require "plugins/configs/session"
 require "plugins/configs/toggleterm"
 require "plugins/configs/hop"
+require "plugins/configs/togglebool"
+require "plugins/configs/telekasten"
+-- require "plugins/configs/chatgpt"
 
 
 --have bug

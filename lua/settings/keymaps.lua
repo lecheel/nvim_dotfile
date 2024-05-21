@@ -17,6 +17,7 @@ vim.g.maplocalleader = ","
 --   Command      = "c"
 
 keymap("n", "<leader>'", "<CMD>Rg<CR>", opts)
+keymap("n", "<leader>0", "<CMD>TodoTelescope<CR>", opts)
 keymap("n", "]q", ":cn<CR>", opts)
 keymap("n", "[q", ":cp<CR>", opts)
 
@@ -38,7 +39,7 @@ keymap("n", "<M-w>", ":w!<CR>", opts)
 keymap("i", "<M-q>", "<CMD>:q!<CR>", opts)
 keymap("n", "<M-q>", "<CMD>:q!<CR>", opts)
 
-keymap("i", "<M-d>", "<ESC>dd<CR>i", opts)
+keymap("i", "<M-d>", "<ESC>dd", opts)
 keymap("n", "<M-d>", "dd", opts)
 
 keymap("i", "<M-b>", "<ESC>:Telescope buffers<CR>", opts)
@@ -58,6 +59,7 @@ keymap('n', '<M-e>', ':Telescope find_files<CR>',opts)
 
 keymap('i', '<M-x>', '<Esc>:bd<CR>', opts)
 keymap('n', '<M-x>', ':bd<CR>',opts)
+keymap('n', '<leader>-', ':bd<CR>',opts)
 
 keymap('n', '<Tab>', '<C-W>w', opts)
 

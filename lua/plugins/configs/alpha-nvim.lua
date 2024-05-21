@@ -43,7 +43,7 @@ local banner = {
   [[ M-q Quit     l/L git gutter next/prev  |  '-'  |]],
   [[ F1  NeoTree  F2  Comment               |       |]],
   [[ F3  QuickFix F4  Hunk preview          |  .-.  |]],
-  [[ F7  Match {} F8  Rg                    |  '-'  |]],
+  [[ F7  Match {} F8  Ripgrep               |  '-'  |]],
   [[ F9  Fterm sh F10 Lazygit            |       |]],
   [[==============='       '================'       |]],
 }
@@ -54,7 +54,7 @@ dashboard.section.header.val = banner
 dashboard.section.buttons.val = {
   dashboard.button('e', '  New file', ':ene <BAR> startinsert<CR>'),
   dashboard.button("r", "  Last Session  ",":SessionManager load_last_session<CR>"),
-  dashboard.button("m", "󰗎  MRU           ",":Telescope oldfiles<CR>"),
+  dashboard.button("m", "  MRU           ",":Telescope oldfiles<CR>"),
   dashboard.button('s', '  Settings', ':e $HOME/.config/nvim/lua/plugins/init.lua<CR>'),
   dashboard.button('w', '  VimWIKI       ',':VimwikiIndex<CR>'),
   dashboard.button('q', '  Quit', ':qa<CR>'),
