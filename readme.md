@@ -1,4 +1,7 @@
 
+
+<img src="./nvim_2024.png" width="800"/>
+
 *packer*
 
 linux
